@@ -28,7 +28,7 @@ This application must:
 Bonus:
 - Use Typescript
 - Provide filtering feature, to filter calls by type (archived, missed …)
-… and many others! Don’t be afraid to use new or unknown libraries, we’d love to learn new things!  
+… and many others! Don’t be afraid to use new or unknown libraries, we’d love to learn new things!
 
 
 **Important Note**: We want you to build this small app as you'd have done it for your current job. (UI, UX, tests, documentation matters).
@@ -264,7 +264,7 @@ To be able to grab a valid JWT token, you need to call the following endpoint:
 
 `POST` `/auth/login` receives the username and password in the body and returns the access_token and the user identity.
 
-Body 
+Body
 
 ```JSON
 {
@@ -293,7 +293,7 @@ Once you are correctly authenticated you need to pass the Authorization header f
 
 **New Refresh Token Endpoint (RECOMMENDED)**
 
-Note that the `access_token` is only available for 10 minutes and the `refresh_token` is available for 1 hour. You need to ask for another fresh access token by calling the `/auth/refresh-token-v2` endpoint passing along the `refresh_token` in the `Authorization` header 
+Note that the `access_token` is only available for 10 minutes and the `refresh_token` is available for 1 hour. You need to ask for another fresh access token by calling the `/auth/refresh-token-v2` endpoint passing along the `refresh_token` in the `Authorization` header
 
 Like so:
 
@@ -352,7 +352,7 @@ This event will be called each time you add a note or archive a call.
 
 Note that, you need to use Pusher SDK in order to listen for this event.
 
-Because this channel is private you need to authenticate first, to do that, you need to make 
+Because this channel is private you need to authenticate first, to do that, you need to make
 - `APP_AUTH_ENDPOINT` point to: `https://frontend-test-api.aircall.io/pusher/auth`
 - set `APP_KEY` to `d44e3d910d38a928e0be`
 - and set `APP_CLUSTER` to `eu`
