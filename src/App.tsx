@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   Route,
   BrowserRouter as Router,
@@ -7,8 +7,18 @@ import {
 import './App.css';
 import CallDetail from './components/CallDetail';
 import Dashboard from './components/Dashboard';
+import Login from './components/Login/Login';
+import useToken from './hooks/useToken';
 
-const App : React.FC = () => (
+
+function App() : JSX.Element {
+  const { token, setToken } = useToken();
+
+ if(!token) {
+  return <Login setToken={setToken} />
+ }
+
+ return (
     <div className="wrapper">
       <h1>Aircall</h1>
        <Router>
@@ -21,5 +31,6 @@ const App : React.FC = () => (
       </Router>
     </div>
   );
+}
 
 export default App;
