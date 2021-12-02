@@ -21,15 +21,15 @@ _NB: You can also build your own components from scratch._
 
 This application must:
 
-- [] Display a paginated list of calls that you’ll retrieve from the API.
-- [] Display the call details view if the user clicks on a call. the view should display all the data related to the call itself.
-- [] Be able to archive one or several calls
-- [] Group calls by date
-- [] Handle real-time events (Whenever a call is archived or a note is being added to a call, these changes should be reflected on the UI immediately)
+- [x] Display a paginated list of calls that you’ll retrieve from the API.
+- [ ] Display the call details view if the user clicks on a call. the view should display all the data related to the call itself.
+- [ ] Be able to archive one or several calls
+- [ ] Group calls by date
+- [ ] Handle real-time events (Whenever a call is archived or a note is being added to a call, these changes should be reflected on the UI immediately)
 
 Bonus:
 
-- [x] Use Typescript
+- [ ] Use Typescript
 - Provide filtering feature, to filter calls by type (archived, missed …)
   … and many others! Don’t be afraid to use new or unknown libraries, we’d love to learn new things!
 
